@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currency Converter</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="converter-card">
+
+      <h1>💱 Currency Converter</h1>
+      <p class="subtitle">Convert currencies in real time</p>
+
+      <!-- Amount -->
+      <div class="input-group">
+        <label>Amount</label>
+        <input type="number" id="amount" placeholder="Enter amount" value="1" />
+      </div>
+
+      <!-- From Currency -->
+      <div class="input-group">
+        <label>From</label>
+        <select id="fromCurrency">
+          <option value="USD">USD</option>
+          <option value="PKR">PKR</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="INR">INR</option>
+          <option value="AED">AED</option>
+        </select>
+      </div>
+      <button class="swap-btn" id="swapBtn">🔄 Swap</button>
+      <div class="input-group">
+        <label>To</label>
+        <select id="toCurrency">
+          <option value="PKR">PKR</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="INR">INR</option>
+          <option value="AED">AED</option>
+        </select>
+      </div>
+      <button class="convert-btn" id="convertBtn">
+        Convert Currency
+      </button>
+      <div class="result-box" id="result">
+        1 USD = 278 PKR
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
